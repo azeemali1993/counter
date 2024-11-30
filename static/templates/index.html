@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Application</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- Header -->
+        <div class="text-center mb-4">
+            <h1 class="fw-bold">Counter Application</h1>
+        </div>
+
+        <!-- Door Selection Section -->
+        <div class="text-center mb-4">
+            <h4 id="door-display" class="fw-bold">Selected Door: None</h4>
+            <div class="btn-group">
+                <button class="door-select-button btn btn-primary" data-door="main_door">Select Main Door</button>
+                <button class="door-select-button btn btn-primary" data-door="side_door">Select Side Door</button>
+            </div>
+        </div>
+
+        <!-- Timer and Count Display -->
+        <div class="row mb-4 text-center">
+            <div class="col-md-6">
+                <h4 id="timer-display" class="fw-bold text-info">Sync in: 10 seconds</h4>
+            </div>
+            <div class="col-md-6">
+                <h4 id="total-count-display" class="fw-bold text-success">Total Count for Selected Door: 0</h4>
+            </div>
+        </div>
+
+        <!-- Local Count Display -->
+        <div class="text-center mb-4">
+            <h4 id="count-display" class="fw-bold text-primary">Local Count: 0</h4>
+        </div>
+
+        <!-- Add/Subtract Buttons -->
+        <div class="text-center mb-4">
+            <button id="add-button" class="btn btn-success btn-lg me-2">Add</button>
+            <button id="subtract-button" class="btn btn-danger btn-lg">Subtract</button>
+        </div>
+    </div>
+
+    <!-- Bootstrap and JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- External JavaScript -->
+    <script src="/static/script.js" defer></script>
+</body>
+</html>
